@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --bg: #050505;
+  --text: #e5e5e5;
+  --card: #0f0f0f;
+}
+
+.light {
+  --bg: #ffffff;
+  --text: #111;
+  --card: #f3f3f3;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  cursor: none;
+}
+
+/* Cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: #6366f1;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  filter: blur(10px);
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #6366f1, #3b82f6, #9333ea);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 4s linear infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% }
+  100% { background-position: 300% }
+}
+
+.cursor-blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0 }
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #888;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  background: #6366f1;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #6366f1;
+}
+
+/* Sections */
+.section {
+  padding: 80px 40px;
+}
+
+.skills span {
+  margin: 8px;
+  padding: 8px 12px;
+  display: inline-block;
+  background: #111;
+  border-radius: 20px;
+}
+
+.edu {
+  color: #888;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Tags */
+.tags span {
+  font-size: 12px;
+  margin-right: 8px;
+  color: #aaa;
+}
+
+/* Buttons in cards */
+.card-buttons {
+  margin-top: 10px;
+}
+
+/* Animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.7s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
