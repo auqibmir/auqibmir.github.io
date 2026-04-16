@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaqib Mir | MERN Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <!-- Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="logo">AM</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="hero-title">
+      <span id="nameTyping"></span><span class="cursor-blink">|</span>
+    </h1>
+
+    <p class="subtitle">Aaqib Mir • MERN Stack Developer</p>
+
+    <div class="hero-btns">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="resume.pdf" class="btn outline" download>Download CV</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section hidden">
+    <h2>About</h2>
+    <p>
+      I’m a BCA student exploring full-stack development and building projects that solve real problems.
+      I focus on learning by doing—turning ideas into working applications.
+    </p>
+    <p class="edu">BCA — Government Degree College Baramulla (2026)</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section hidden">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>MERN Stack</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>MongoDB</span>
+      <span>Java</span>
+      <span>Python</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section hidden">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Project Card -->
+      <div class="card">
+       <div class="card">
+  <h3>UniSphere – Smart College Platform</h3>
+
+  <p>
+    A full-stack college management platform that simplifies student workflows with features like attendance tracking, complaint management, and classroom navigation.
+  </p>
+
+  <div class="tags">
+    <span>React</span>
+    <span>Node.js</span>
+    <span>MongoDB</span>
+  </div>
+
+  <div class="card-buttons">
+    <a href="https://auqib-unisphere.vercel.app/" class="btn small">Live</a>
+    <a href="https://github.com/auqibmir" class="btn small outline">GitHub</a>
+  </div>
+</div>
+
+      <!-- Placeholder -->
+      <div class="card">
+        <h3>More Coming</h3>
+        <p>Currently building real-world projects. Stay tuned.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section hidden">
+    <h2>Contact</h2>
+    <p>Email: aqibmir2024@gmail.com</p>
+    <!-- <p>GitHub: https://github.com/auqibmir</p> -->
+  </section>
+  <section class="section">
+  <h2 class="contact-title">Contact Me</h2>
+
+  <div class="contact-container">
+
+    <!-- FORM -->
+    <form id="contactForm" action="https://formspree.io/f/xvzdzywp" method="POST" class="contact-form">
+
+      <div class="input-box">
+        <input type="text" name="name" required>
+        <label>Your Name</label>
+      </div>
+
+      <div class="input-box">
+        <input type="email" name="email" required>
+        <label>Your Email</label>
+      </div>
+
+      <div class="input-box">
+        <textarea name="message" required></textarea>
+        <label>Your Message</label>
+      </div>
+
+      <button type="submit" id="sendBtn">Send Message</button>
+
+    </form>
+
+    <!-- SIDE INFO -->
+    <div class="contact-info">
+      <h3>Let’s Connect</h3>
+      <p>Open to opportunities, collaborations, or just a quick chat.</p>
+      <p>Email: aqibmir2024@gmail.com</p>
+    </div>
+
+  </div>
+
+  <!-- SUCCESS POPUP -->
+  <div id="successPopup" class="popup">Message Sent ✅</div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
